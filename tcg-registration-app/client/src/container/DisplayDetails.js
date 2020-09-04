@@ -16,7 +16,8 @@ function DisplayDetails () {
       console.log(e)
     }
   }, [setStudentDetails])
-  console.log(studentDetails)
+ 
+
   const submit = async (e) => {
     try {
       e.preventDefault();
@@ -29,7 +30,7 @@ function DisplayDetails () {
     <div>
       <div class="signup-form">
         <form onSubmit={(e) => submit(e)}>
-          <h2>Fill Form</h2>
+          <h2>Register</h2>
           <p class="hint-text">Enter Personal Details</p>
           <div class="form-group">
             <div class="row">
@@ -84,10 +85,14 @@ function DisplayDetails () {
             <input class="btn btn-success btn-lg btn-block" type="submit" />
           </div>
         </form>
-        {studentDetails.map(credential => <div>Name:{credential.name}, surname:{credential.surname}, email:{credential.email},
-       Home Address:{credential.home_Address}, ID number:{credential.id_Number}<br /><br />
+        <div className="credentials">
+          <h1>Registered Students</h1>
+          <br/>
+          {studentDetails.map(credential => <div ><h3>Name:{credential.name},</h3> <h3>surname:{credential.surname},</h3><h3>email:{credential.email},</h3>
+            <h3>Home Address:{credential.home_Address},</h3> <h3>ID number:{credential.id_Number}</h3><br /><br />
         </div>)
         }
+        </div>
       </div>
     </div>
   )

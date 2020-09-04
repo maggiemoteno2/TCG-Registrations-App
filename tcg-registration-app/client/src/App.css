@@ -119,3 +119,82 @@
 .signup-form form a:hover {
 	text-decoration: underline;
 }  
+.credentials{
+  margin: -733px 0px 0px 638px;
+}
+.form-control {
+	background: #f2f2f2;
+	font-size: 16px;
+	border-color: transparent;
+	box-shadow: none !important;
+}
+.form-control:focus {
+	border-color: #91d5a8;
+	background: #e9f5ee;
+}
+.form-control, .btn {        
+	border-radius: 2px;
+}
+.login-form {
+	width: 380px;
+	margin: 0 auto;
+}
+.login-form h2 {
+	margin: 0;
+	padding: 30px 0;
+	font-size: 34px;
+}
+
+.login-form form {
+  color: #7a7a7a;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    background: #fff;
+    box-shadow: 0px 11px 31px rgba(0, 0, 0, 1);
+    padding: 62px		
+}
+.login-form .btn, .login-form .btn:active {
+	font-size: 16px;
+	line-height: 26px;
+	min-width: 120px;
+	font-weight: bold;
+	background: #4aba70 !important;
+	border: none;		
+}
+.login-form .btn:hover, .login-form .btn:focus{
+	background: #40aa65 !important;
+}
+.form-check-label {
+	margin-top: 9px;
+}
+.form-check-label input {
+	margin-top: 3px;
+}
+.login-form a {
+	color: #4aba70;
+}	
+.login-form a:hover {
+	text-decoration: underline;
+}
+.hint-text {
+	color: #999;
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+body {
+	color: #fff;
+	background: #63738a;
+	font-family: 'Roboto', sans-serif;
+}
+.form-control {
+	height: 40px;
+	box-shadow: none;
+	color: #969fa4;
+}
+.form-control:focus {
+	border-color: #5cb85c;
+}
+.form-control, .btn {        
+	border-radius: 3px;
+}
