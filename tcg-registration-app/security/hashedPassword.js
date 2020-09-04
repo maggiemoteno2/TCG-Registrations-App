@@ -1,11 +1,11 @@
-const bcrypt = require('bcrypt');
 const Credentials = require('./../models/credentials')
+const bcrypt = require('bcrypt')
 
 const hashPassword = async (password) => {
   const salts = 10;
   try {
     const salt = await bcrypt.genSalt(salts)
-    const hashedPassword = await bcrypt.hash(password, salt)
+    const hashedPassword = await bcrypt.hash(password , salt)
     return hashedPassword
   } catch (e) {
     console.log(e)

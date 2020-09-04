@@ -6,7 +6,6 @@ const addStudentDetails = (server) => {
     const { name, surname, email, password, home_Address, id_Number } = req.body
     try {
      
-    
       const saveDetails = await new StudentModel({
         name, surname, email, password, home_Address, id_Number
       }).save()

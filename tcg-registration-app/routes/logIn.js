@@ -9,12 +9,12 @@ const signIn = (server) => {
     try {
       const student = await StudentModel.findOne({ email });
       if (student) {
-        const passwordVerification = await checkPassword(password, email);
+        const isVerified = await checkPassword(password, email);
         const token = await createToken(student.email);
-        if (passwordVerification) {
+        if (isVerified) {
           return res.json({ token });
         }
-        if (!passwordVerification) {
+        if (!isVerified) {
           return res.json({ error: "password or email is incorrect" });
         }
       } else {
